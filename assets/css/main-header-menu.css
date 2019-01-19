@@ -127,7 +127,7 @@
         background: var(--main-header-tertiary-color);
         box-shadow: 0px 4px 10px var(--main-header-shadow-color);
     }
-    .main-header-dropdown-button div {
+    .main-header-dropdown-button .stripes {
         background: var(--main-header-quaternary-color); 
         height: 2px;
         min-width: 25px;

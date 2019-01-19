@@ -1,7 +1,6 @@
 const mainHeader = document.querySelector(".main-header")
 const dropdownMenu = document.querySelector(".dropdown-menu ul")
 const dropdownMenuItems = document.querySelectorAll(".dropdown-menu-item")
-const dropdownButton = document.querySelector(".main-header-dropdown-button")
 const HEADER_HEIGHT = 70
 const DROPDOWN_MENU_HEIGHT = 360
 const TOP_DISTANCE_TO_HIDE_THE_HEADER = 330
