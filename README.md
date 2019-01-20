@@ -19,7 +19,7 @@ No plugins, no libraries. Just Vanilla JS.
 ## Usage instructions
 
 * [Download the project](https://github.com/nathanssantos/dropdown-menu-component/archive/master.zip)
-* Open `index.html` on your IDE and copy the amount of code between the two "COPY" tags to the place on your project were you do want to implement the menu following the example below:
+* Open the file `index.html` on a text editor and copy the amount of code between the two "COPY" tags, following the example below, to the place on your project were you do want to implement the menu.
 ![](assets/images/dropdown-menu-example.jpg)
 * Make sure that you have the correct links to the dropdown menu CSS and JS assets files on your project
 
