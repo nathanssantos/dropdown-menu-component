@@ -5,7 +5,6 @@ const HEADER_HEIGHT = 70
 const DROPDOWN_MENU_HEIGHT = 360
 const TOP_DISTANCE_TO_HIDE_THE_HEADER = 330
 
-
 // SHOW/HIDE MAIN HEADER ON SCROLL
 const hideMainHeader = () => mainHeader.style.top = `-${HEADER_HEIGHT}px`
 let previousScrollPosition = window.pageYOffset
@@ -17,16 +16,13 @@ const toggleMainHeader = window.onscroll = () => {
     previousScrollPosition = currentScrollPosition
 }
 
-
 // TOGGLE DROPDOWN MENU
 let dropdownMenuState = 0
-const openDropdownMenu = () => {
-    dropdownMenu.style.height = `${DROPDOWN_MENU_HEIGHT}px`
-}
+const openDropdownMenu = () => dropdownMenu.style.height = `${DROPDOWN_MENU_HEIGHT}px`
 
 const closeDropdownMenu = () => {
-    dropdownMenu.style.height = "0"
     dropdownMenuState = 0
+    dropdownMenu.style.height = "0"
 }
 
 const toggleDropdownMenu = n => {
@@ -43,9 +39,5 @@ const toggleDropdownMenu = n => {
     }
 }
 
-const closeDropdownMenuSelectingItem = () => {
-    dropdownMenuItems.forEach((item) => {
-        item.addEventListener("click", closeDropdownMenu)
-    })
-}
+const closeDropdownMenuSelectingItem = () => dropdownMenuItems.forEach((item) => item.addEventListener("click", closeDropdownMenu))
 closeDropdownMenuSelectingItem()
