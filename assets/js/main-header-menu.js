@@ -6,12 +6,13 @@ const DROPDOWN_MENU_HEIGHT = 360
 const TOP_DISTANCE_TO_HIDE_THE_HEADER = 330
 
 // SHOW/HIDE MAIN HEADER ON SCROLL
+const showMainHeader = () => mainHeader.style.top = "0"
 const hideMainHeader = () => mainHeader.style.top = `-${HEADER_HEIGHT}px`
 let previousScrollPosition = window.pageYOffset
 
 const toggleMainHeader = window.onscroll = () => {
     let currentScrollPosition = window.pageYOffset
-    if (previousScrollPosition > currentScrollPosition || currentScrollPosition < TOP_DISTANCE_TO_HIDE_THE_HEADER) mainHeader.style.top = "0"
+    if (previousScrollPosition > currentScrollPosition || currentScrollPosition < TOP_DISTANCE_TO_HIDE_THE_HEADER) showMainHeader()
     else hideMainHeader()
     previousScrollPosition = currentScrollPosition
 }
