@@ -40,5 +40,4 @@ const toggleDropdownMenu = n => {
     }
 }
 
-const closeDropdownMenuSelectingItem = () => dropdownMenuItems.forEach((item) => item.addEventListener("click", closeDropdownMenu))
-closeDropdownMenuSelectingItem()
+const closeDropdownMenuSelectingItem = (() => dropdownMenuItems.forEach((item) => item.addEventListener("click", closeDropdownMenu)))()
