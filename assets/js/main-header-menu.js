@@ -41,3 +41,8 @@ const toggleDropdownMenu = n => {
 }
 
 const closeDropdownMenuSelectingItem = (() => dropdownMenuItems.forEach((item) => item.addEventListener("click", closeDropdownMenu)))()
+
+const getHeight = function() {
+    console.log(this)
+}
+
