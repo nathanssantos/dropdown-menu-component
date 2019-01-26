@@ -1,4 +1,4 @@
-# dropdown Menu Component
+# Dropdown Menu Component
 
 Fully responsive and ready to use dropdown menu component.
 
